@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from utouchdesign.com/themes/realfun/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jun 2022 13:50:41 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="">
+<meta name="theme-color" content="#145D9E">
+<meta name="description" content="Real Estate HTML Template">
+<meta name="keywords" content="Apartment, Estate Agency, Housing, Real Estate, Real Estate Broker, Real Estate Property, Single Property">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<title>:: RealFun - Real Estate HTML Template ::</title>
+
+<!--  Favicon -->
+<link rel="shortcut icon" href="images/favicon.png">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/stylesheet.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;display=swap" rel="stylesheet"> 
+</head>
+
+<style>
+	@import url("https://fonts.googleapis.com/css?family=Roboto");
+@-webkit-keyframes come-in {
+  0% {
+    -webkit-transform: translatey(100px);
+            transform: translatey(100px);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateX(-50px) scale(0.4);
+            transform: translateX(-50px) scale(0.4);
+  }
+  70% {
+    -webkit-transform: translateX(0px) scale(1.2);
+            transform: translateX(0px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translatey(0px) scale(1);
+            transform: translatey(0px) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes come-in {
+  0% {
+    -webkit-transform: translatey(100px);
+            transform: translatey(100px);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateX(-50px) scale(0.4);
+            transform: translateX(-50px) scale(0.4);
+  }
+  70% {
+    -webkit-transform: translateX(0px) scale(1.2);
+            transform: translateX(0px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translatey(0px) scale(1);
+            transform: translatey(0px) scale(1);
+    opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: #eaedf2;
+  font-family: 'Roboto', sans-serif;
+}
+
+.floating-container {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  margin: 35px 25px;
+}
+.floating-container:hover {
+  height: 300px;
+}
+.floating-container:hover .floating-button {
+  box-shadow: 0 10px 25px #145D9E;
+  -webkit-transform: translatey(5px);
+          transform: translatey(5px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.floating-container:hover .element-container .float-element:nth-child(1) {
+  -webkit-animation: come-in 0.4s forwards 0.2s;
+          animation: come-in 0.4s forwards 0.2s;
+}
+.floating-container:hover .element-container .float-element:nth-child(2) {
+  -webkit-animation: come-in 0.4s forwards 0.4s;
+          animation: come-in 0.4s forwards 0.4s;
+}
+.floating-container:hover .element-container .float-element:nth-child(3) {
+  -webkit-animation: come-in 0.4s forwards 0.6s;
+          animation: come-in 0.4s forwards 0.6s;
+}
+.floating-container .floating-button {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background:#145D9E;
+  bottom: 0;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  line-height: 65px;
+  text-align: center;
+  font-size: 23px;
+  z-index: 100;
+  box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.floating-container .float-element {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 15px auto;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+.floating-container .float-element .material-icons {
+  vertical-align: middle;
+  font-size: 16px;
+}
+.floating-container .float-element:nth-child(1) {
+  background: green;
+  box-shadow: 0 20px 20px -10px rgba(66, 165, 245, 0.5);
+}
+.floating-container .float-element:nth-child(2) {
+  background: #4267B2;
+  box-shadow: 0 20px 20px -10px rgba(76, 175, 80, 0.5);
+}
+.floating-container .float-element:nth-child(3) {
+  background: #D54074;
+  box-shadow: 0 20px 20px -10px rgba(255, 152, 0, 0.5);
+}
+
+.our-team{
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px 15px 30px;
+    background: #fff;
+
+}
+.our-team .pic{
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .pic{
+    background: #145D9E;
+    border-radius: 50%;
+}
+.pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.our-team .title{
+    font-weight: 600;
+    color: #2e282a;
+    text-transform: uppercase;
+    display: block;
+    font-size: 20px;
+    margin: 0 0 7px 0;
+}
+.our-team .post{
+    color: #145D9E;
+    text-transform: capitalize;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.our-team:hover .pic{
+    background: #145D9E;
+    border-radius: 50%;
+}
+.our-team:hover .social li a{
+    background: #17bebb;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+<!-- Preloader Start -->
+<div class="preloader">
+    <div class="utf-preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- Preloader End -->
+
+<!-- Wrapper -->
+<div id="wrapper"> 
+  <!-- Header Container -->
+  <header id="header-container" class="fullwidth"> 
+    <!-- Header -->
+    <div id="header">
+      <div class="container"> 
+        <div class="left-side"> 
+          <div id="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+          <div class="mmenu-trigger">
+            <button class="hamburger hamburger--collapse" type="button"> <span class="hamburger-box"> <span class="hamburger-inner"></span> </span> </button>
+          </div>
+		  <!-- Main Navigation -->
+          <nav id="navigation"  class="style-1 ">
+            <ul id="responsive">
+              <li><a class="current" href="index.html">Home</a></li>
+			  <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Categories</a>
+				<ul>
+				  <li><a href="/categories.html">Fully-Dettached</a></li>
+				  <li><a href="/categories.html">Semi-Detached </a></li>
+				  <li><a href="/categories.html">Apartment</a></li>
+				  <li><a href="/categories.html">Terraces</a></li>
+				  <li><a href="/categories.html">Mortgage</a></li>
+				  
+				</ul>
+			  </li>
+
+			  <li><a href="#">Portfolio</a>
+				<ul>
+				  <li><a href="categories.html">Ongoing Properties</a></li>
+				  <li><a href="categories.html">Available Properties</a></li>
+				 
+				</ul>
+			  </li>
+            
+		
+			
+			  <li><a href="contact.html">Contact Us</a></li>
+			 
+            </ul>
+          </nav>
+          <div class="clearfix"></div>
+        </div>
+        <div class="right-side"> 
+          <div class="header-widget"> 
+			<a href="tel:07089061949" class="popup-with-zoom-anim log-in-button sign-in"><i class="icon-feather-phone-call"></i> <span>Call Us Now</span></a> 
+			<a href="/search.html" class="button border"><i class=" icon-material-outline-search"></i> <span>Explore Property</span></a> 
+		  </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="clearfix"></div>
+  <!-- Header Container / End --> 
+  
+  <!-- Titlebar -->
+  <div class="parallax titlebar" data-background="images/home-parallax-3.jpg" data-color="rgba(48, 48, 48, 1)" data-color-opacity="0.7" data-img-width="800" data-img-height="505">
+    <div id="titlebar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>About Us</h2>
+            <!-- Breadcrumbs -->
+            <nav id="breadcrumbs">
+              <ul>
+                <li><a href="index-2.html">Home</a></li>
+                <li>About Us</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact --> 
+  <div class="margin-top-65 padding-bottom-55">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-xl-12 col-md-12">
+			<p>We are a real estate brokerage, development, and investment advisory firm domiciled in Ikoyi, the most high-brow neighborhood in Lagos, Nigeria, with highly experienced affiliates in neighboring cities. At Centania homes, we see a home as the most valuable investment, and the greatest necessity in the world of man.</p>
+			<blockquote class="margin-bottom-20">We believe that every income earner, irrespective of their varying budgets, should own a home which meets the increasing demand of the modern-day urban architecture – a home embedded in luxury. Consequently, we make the process of buying, selling, and rehabilitating homes for our clients hassle-free.</blockquote>
+				<p><b>In clear terms, the following activities summarize our organizational approach.</b> </p>
+			<ul class="list-2">
+			  <li><b>We Buy:</b> acquire properties for our clients in desirable neighborhoods.</li>
+			  <li><b>We Sell:</b> Smooth property sales across Lagos and beyond</li>
+			  <li><b>We Rent:</b> We rent properties to low-income and high-income families in safe, desirable areas</li>
+			  <li><b>We Rehabilitate:</b>  We ransform “ugly” houses into beautiful homes</li>
+			  <li><b>We Finance: </b>Our real estate finance practice focuses on the financing and refinancing of the sale, purchase, development and management of real estate assets of all types. our real estate finance team is diverse, with a culture of technical excellence on loan financings carefully built over the years.
+        </li>
+			  <li><b>We advise:</b> A huge pressure is being mounted on the real estate sector across the globe, as rapid urbanization and the quest for re-urbanization are driving the business forward for investment cycles and capital market movements. consequently, the task of improving the performance of real estate, and offering service value is becoming more demanding. 
+        </li>
+			 
+			</ul>
+		  </div>
+		</div>
+	  </div>
+  </div>
+  <!-- Container / End -->
+  
+  <!-- Fullwidth Section -->
+
+  <section class="fullwidth" data-background-color="#fbfbfb"> 
+    <div class="container">
+      <div class="row">
+		<div class="col-md-12">	
+			<div class="utf-section-headline-item centered margin-bottom-30 margin-top-0">
+			  <h3 class="headline"><span>Why Choose Us?</span> Luxury Embedded in Affordability </h3>
+			  <div class="utf-headline-display-inner-item">What are you looking for?</div>
+			  <p class="utf-slogan-text">We maintain high levels of customer/client service, and ensure compliance with all state-based real estate laws. Our approach to real estate operations includes buying, renovating, and managing homes.</p>
+			</div>  
+		</div>
+        <div class="col-md-3 col-sm-6"> 
+          <div class="utf-icon-box-item-area">
+            <div class="icon-container"><i class="icon-line-awesome-building"></i></div>
+            <h3>Integrity</h3>
+            <p>We operate consistently in accordance with a strong set of moral values and ethical guidelines.<br><br>
+			</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6"> 
+          <div class="utf-icon-box-item-area">
+            <div class="icon-container"><i class="icon-line-awesome-institution"></i></div>
+            <h3>Experience</h3>
+            <p>We provide top notch services and experiences throughout the entire customer journey while providing you with value for your money.<br></p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6"> 
+          <div class="utf-icon-box-item-area">
+            <div class="icon-container"><i class="icon-material-outline-location-city"></i></div>
+            <h3>Excellence</h3>
+            <p>As certified Professionals, we are embedded with the responsibility of ensuring optimum satisfaction to every client.<br></p>
+          </div>
+        </div>
+		<div class="col-md-3 col-sm-6"> 
+          <div class="utf-icon-box-item-area">
+            <div class="icon-container"><i class="icon-material-outline-business"></i></div>
+            <h3>Team Spirit</h3>
+            <p>With our line of professional business development executives who are always readily available ensure that no need is left unmet at all times.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <div class="floating-container">
+    <div class="floating-button">+</div>
+    <div class="element-container">
+  
+  <a href="tel:07089061949"> 
+    <span class="float-element tooltip-left">
+        <i class="material-icons">phone
+        </i></a>
+      </span>
+      <span class="float-element">
+        <a href="https://web.facebook.com/CentaniaHomes" target="_blank" style="color:white" ><b class="material-icons">facebook
+      </b></a>
+      </span>
+  
+    <span class="float-element">
+      <a href="https://www.instagram.com/centaniahomes/" style="color:white" target="_blank" ><i class="icon-brand-instagram">
+      </i></a>
+      </span>
+  
+  
+  
+    <!-- <span class="float-element">
+      <a href="ideas" style="color:white" ><i class="material-icons">facebook
+      </i></a>
+      </span> -->
+    
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="col-md-12">	
+        <br><br>
+        <div class="utf-section-headline-item centered margin-bottom-30 margin-top-0">
+          <h3 class="headline"><span>Our Team</span> Meet Our Team of Professionals</h3>
+          <div class="utf-headline-display-inner-item">Amazing team of Centania</div>
+          <!-- <p class="utf-slogan-text">We maintain high levels of customer/client service, and ensure compliance with all state-based real estate laws. Our approach to real estate operations includes buying, renovating, and managing homes.</p> -->
+        </div>  
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team shadow-sm" style="background-color:whitesmoke  ;">
+              <div class="pic">
+                  <img src="/images/abiola.png">
+              </div>
+              <h3 class="title">Abiola Olatoyinbo </h3>
+              <span class="post">Business Development Executive</span>
+
+              <!--social icon-->
+
+          </div>
+      </div>
+
+<!--2nd member-->
+
+      <div class="col-md-3 col-sm-6">
+          <div class="our-team" style="background-color:whitesmoke  ;">
+              <div class="pic">
+                  <img src="images/ibinabo.png">
+              </div>
+              <h3 class="title">Ibinabo Boukoru</h3>
+              <span class="post">Asst Head of Operations</span>
+
+               <!--social Icon-->
+
+          </div>
+      </div>
+
+<!--3rd member-->
+
+      <div class="col-md-3 col-sm-6">
+          <div class="our-team" style="background-color:whitesmoke  ;">
+              <div class="pic">
+                  <img src="/images/venelda.png">
+              </div>
+              <h3 class="title">Venelda Ukaonu</h3>
+              <span class="post">Business Development Executive</span>
+              
+               <!--social icon-->
+
+          </div>
+      </div>
+
+<!--4th member-->
+
+      <div class="col-md-3 col-sm-6">
+          <div class="our-team" style="background-color:whitesmoke  ;">
+              <div class="pic">
+                  <img src="/images/toyosi.png">
+              </div>
+              <h3 class="title">Toyosi Obebe</h3>
+              <span class="post">Business Development Executive</span>
+
+               <!--social icon-->
+
+          </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+
+
+  <!-- Footer -->
+  <!-- <div class="margin-top-65"></div> -->
+  <div id="footer"> 
+    <div class="container">
+      <div class="row">
+	    <div class="col-md-5 col-sm-6 col-xs-12"> 
+          <a href="index-2.html"><img class="footer-logo" src="images/logo.png" alt=""></a>
+          <p>At Centania homes, we see a home as the most valuable investment, and the greatest necessity in the world of man.</p>  
+		  <p><b>Location:</b> 39, alfred rewane road Ikoyi, Lagos</p>  
+		  <p><b><a href="mailto:info@centaniahomes.com:">Email:</b>info@centaniahomes.com</a></p>
+		  <p><b>Opening time:</b> Always Open</p>        
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-6">
+          <h4>Quick Links</h4>
+          <ul class="utf-footer-links-item">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="#">Available Properties</a></li>
+            <li><a href="#">Ongoing Properties </a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+          <h4>Property Cities</h4>
+          <ul class="utf-footer-links-item">
+            <li><a href="#">Ajah</a></li>
+            <li><a href="#">Chicago</a></li>
+            <li><a href="#">Denvar</a></li>
+			<li><a href="#">Maitamma</a></li>
+            
+          </ul>
+        </div>
+        <!-- <div class="col-md-4 col-sm-4 col-xs-6">
+          <h4>Resources</h4>
+          <ul class="utf-footer-links-item">
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">How It Work</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Term & Condition</a></li>
+          </ul>
+        </div>
+		<div class="col-md-4 col-sm-4 col-xs-6">
+          <h4>Pages</h4>
+          <ul class="utf-footer-links-item">
+            <li><a href="#">Our Partners</a></li>
+            <li><a href="#">How It Work</a></li>
+			<li><a href="#">FAQ Page</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Term & Condition</a></li>
+          </ul>
+        </div>	 -->
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyrights">Copyright © 2022 All Rights Reserved.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer / End --> 
+  
+<!-- Back To Top Button -->
+<!-- <div id="backtotop"><a href="#"></a></div>
+
+</div> -->
+<!-- Wrapper / End --> 
+
+<!-- Sign In Popup -->
+<div id="utf-signin-dialog-block" class="zoom-anim-dialog mfp-hide dialog-with-tabs"> 
+  <div class="utf-signin-form-part">
+    <ul class="utf-popup-tabs-nav-item">
+      <li><a href="#login">Log In</a></li>
+      <li><a href="#register">Register</a></li>
+    </ul>
+    <div class="utf-popup-container-part-tabs"> 
+      <!-- Login -->
+      <div class="utf-popup-tab-content-item" id="login"> 
+        <div class="utf-welcome-text-item">
+          <h3>Welcome Back Sign in to Continue</h3>
+          <span>Don't Have an Account? <a href="#" class="register-tab">Sign Up!</a></span> 
+		</div>
+        <form method="post" id="login-form">
+          <div class="utf-no-border">
+            <input type="text" name="emailaddress" id="emailaddress" placeholder="Email Address" required/>
+          </div>
+          <div class="utf-no-border">
+            <input type="password" name="password" id="password" placeholder="Password" required/>
+          </div>
+		  <div class="checkbox margin-top-0">
+			<input type="checkbox" id="two-step">
+			<label for="two-step"><span class="checkbox-icon"></span> Remember Me</label>
+		  </div>
+          <a href="forgot_password.html" class="forgot-password">Forgot Password?</a>
+        </form>
+        <button class="button full-width utf-button-sliding-icon ripple-effect" type="submit" form="login-form">Log In <i class="icon-feather-chevrons-right"></i></button>
+        <div class="utf-social-login-separator-item"><span>Or Login in With</span></div>
+        <div class="utf-social-login-buttons-block">
+          <button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Facebook</button>
+		  <button class="google-login ripple-effect"><i class="icon-brand-google"></i> Google</button>
+		  <button class="twitter-login ripple-effect"><i class="icon-brand-twitter"></i> Twitter</button>
+        </div>
+      </div>
+      
+      <!-- Register -->
+      <div class="utf-popup-tab-content-item" id="register"> 
+        <div class="utf-welcome-text-item">
+          <h3>Create your Account!</h3>
+		  <span>Don't Have an Account? <a href="#" class="register-tab">Sign Up!</a></span> 
+        </div>        
+        <form method="post" id="utf-register-account-form">
+          <div class="utf-no-border margin-bottom-20">
+			<select class="utf-chosen-select-single-item utf-with-border" title="Single User">
+				<option>Single User</option>
+				<option>Agent</option>
+				<option>Multi User</option>				
+			</select>
+		  </div>
+		  <div class="utf-no-border">
+            <input type="text" name="name" id="name" placeholder="User Name" required/>
+          </div>
+		  <div class="utf-no-border">
+            <input type="text" name="emailaddress-register" id="emailaddress-register" placeholder="Email Address" required/>
+          </div>
+		  <div class="utf-no-border">
+            <input type="password" name="password-register" id="password-register" placeholder="Password" required/>
+          </div>
+          <div class="utf-no-border">
+            <input type="password" name="password-repeat-register" id="password-repeat-register" placeholder="Repeat Password" required/>
+          </div>
+		  <div class="checkbox margin-top-0">
+			<input type="checkbox" id="two-step0">
+			<label for="two-step0"><span class="checkbox-icon"></span> By Registering You Confirm That You Accept <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+		  </div>
+        </form>
+        <button class="margin-top-10 button full-width utf-button-sliding-icon ripple-effect" type="submit" form="utf-register-account-form">Register <i class="icon-feather-chevrons-right"></i></button>        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Sign In Popup / End -->
+
+<!-- Scripts --> 
+<script src="scripts/jquery-3.3.1.min.js"></script> 
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/chosen.min.js"></script> 
+<script src="scripts/magnific-popup.min.js"></script> 
+<script src="scripts/owl.carousel.min.js"></script> 
+<script src="scripts/rangeSlider.js"></script> 
+<script src="scripts/sticky-kit.min.js"></script> 
+<script src="scripts/slick.min.js"></script> 
+<script src="scripts/masonry.min.js"></script> 
+<script src="scripts/mmenu.min.js"></script> 
+<script src="scripts/tooltips.min.js"></script> 
+<script src="scripts/custom_jquery.js"></script> 
+</body>
+
+<!-- Mirrored from utouchdesign.com/themes/realfun/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jun 2022 13:50:41 GMT -->
+</html>

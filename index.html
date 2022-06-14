@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from utouchdesign.com/themes/realfun/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jun 2022 13:43:58 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="">
+<meta name="theme-color" content="#145D9E">
+<meta name="description" content="Real Estate HTML Template">
+<meta name="keywords" content="Apartment, Estate Agency, Housing, Real Estate, Real Estate Broker, Real Estate Property, Single Property">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>:: RealFun - Real Estate HTML Template ::</title>
+
+<!--  Favicon -->
+<link rel="shortcut icon" href="images/favicon.png">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/stylesheet.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;display=swap" rel="stylesheet">  
+
+
+<style>
+	@import url("https://fonts.googleapis.com/css?family=Roboto");
+@-webkit-keyframes come-in {
+  0% {
+    -webkit-transform: translatey(100px);
+            transform: translatey(100px);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateX(-50px) scale(0.4);
+            transform: translateX(-50px) scale(0.4);
+  }
+  70% {
+    -webkit-transform: translateX(0px) scale(1.2);
+            transform: translateX(0px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translatey(0px) scale(1);
+            transform: translatey(0px) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes come-in {
+  0% {
+    -webkit-transform: translatey(100px);
+            transform: translatey(100px);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateX(-50px) scale(0.4);
+            transform: translateX(-50px) scale(0.4);
+  }
+  70% {
+    -webkit-transform: translateX(0px) scale(1.2);
+            transform: translateX(0px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translatey(0px) scale(1);
+            transform: translatey(0px) scale(1);
+    opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: #eaedf2;
+  font-family: 'Roboto', sans-serif;
+}
+
+.floating-container {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  margin: 35px 25px;
+}
+.floating-container:hover {
+  height: 300px;
+}
+.floating-container:hover .floating-button {
+  box-shadow: 0 10px 25px #145D9E;
+  -webkit-transform: translatey(5px);
+          transform: translatey(5px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.floating-container:hover .element-container .float-element:nth-child(1) {
+  -webkit-animation: come-in 0.4s forwards 0.2s;
+          animation: come-in 0.4s forwards 0.2s;
+}
+.floating-container:hover .element-container .float-element:nth-child(2) {
+  -webkit-animation: come-in 0.4s forwards 0.4s;
+          animation: come-in 0.4s forwards 0.4s;
+}
+.floating-container:hover .element-container .float-element:nth-child(3) {
+  -webkit-animation: come-in 0.4s forwards 0.6s;
+          animation: come-in 0.4s forwards 0.6s;
+}
+.floating-container .floating-button {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background:#145D9E;
+  bottom: 0;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  line-height: 65px;
+  text-align: center;
+  font-size: 23px;
+  z-index: 100;
+  box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.floating-container .float-element {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 15px auto;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  line-height: 50px;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+.floating-container .float-element .material-icons {
+  vertical-align: middle;
+  font-size: 16px;
+}
+.floating-container .float-element:nth-child(1) {
+  background: green;
+  box-shadow: 0 20px 20px -10px rgba(66, 165, 245, 0.5);
+}
+.floating-container .float-element:nth-child(2) {
+  background: #4267B2;
+  box-shadow: 0 20px 20px -10px rgba(76, 175, 80, 0.5);
+}
+.floating-container .float-element:nth-child(3) {
+  background: #D54074;
+  box-shadow: 0 20px 20px -10px rgba(255, 152, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+<!-- Preloader Start -->
+<div class="preloader">
+    <div class="utf-preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<!-- Preloader End -->
+
+<!-- Wrapper -->
+<div id="wrapper"> 
+  <!-- Compare Property Widget -->
+  <div class="utf-compare-slidebar-area">
+    <div class="utf-smt-trigger-item"></div>
+    <div class="utf-smt-content">
+      <h4>Compare Property
+        <span class="utf-smt-mobile-trigger-item"></span>
+      </h4>
+      <div class="utf-smt-property-item"> 
+        <!-- Property -->
+        <div class="utf-listing-item compact"> <a href="single-property-page-2.html" class="utf-smt-listing-img-container">
+          <div class="utf-remove-compare-item"><i class="icon-line-awesome-close"></i></div>
+          <div class="utf-listing-badges-item"><span class="for-sale">For Sale</span></div>
+          <div class="utf-listing-img-content-item"> <span class="utf-listing-compact-title-item">Renovated Luxury Apartment <i>$420,000</i></span> </div>
+          <img src="images/listing-01.jpg" alt=""> </a> 
+		</div>
+        <!-- Property -->
+        <div class="utf-listing-item compact"> <a href="single-property-page-2.html" class="utf-smt-listing-img-container">
+          <div class="utf-remove-compare-item"><i class="icon-line-awesome-close"></i></div>
+          <div class="utf-listing-badges-item"><span class="for-sale">For Sale</span></div>
+          <div class="utf-listing-img-content-item"> <span class="utf-listing-compact-title-item">Renovated Luxury Apartment <i>$420,000</i></span> </div>
+          <img src="images/listing-02.jpg" alt=""> </a> 
+		</div>        
+      </div>
+      <div class="utf-smt-buttons"><a href="compare-properties.html" class="button">Compare Property</a></div>
+    </div>
+  </div>
+  <!-- Compare Property Widget / End -->
+  
+  <!-- Header Container -->
+  <header id="header-container" class="fullwidth"> 
+    <!-- Header -->
+    <div id="header">
+      <div class="container"> 
+        <div class="left-side"> 
+          <div id="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+          <div class="mmenu-trigger">
+            <button class="hamburger hamburger--collapse" type="button"> <span class="hamburger-box"> <span class="hamburger-inner"></span> </span> </button>
+          </div>
+		  <!-- Main Navigation -->
+          <nav id="navigation"  class="style-1 ">
+            <ul id="responsive">
+              <li><a class="current" href="index.html">Home</a></li>
+			  <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Categories</a>
+				<ul>
+				  <li><a href="/categories.html">Fully-Dettached</a></li>
+				  <li><a href="/categories.html">Semi-Detached </a></li>
+				  <li><a href="/categories.html">Apartment</a></li>
+				  <li><a href="/categories.html">Terraces</a></li>
+				  <li><a href="/categories.html">Mortgage</a></li>
+				  
+				</ul>
+			  </li>
+
+			  <li><a href="#">Portfolio</a>
+				<ul>
+				  <li><a href="categories.html">Ongoing Properties</a></li>
+				  <li><a href="categories.html">Available Properties</a></li>
+				 
+				</ul>
+			  </li>
+            
+		
+			
+			  <li><a href="contact.html">Contact Us</a></li>
+			 
+            </ul>
+          </nav>
+          <div class="clearfix"></div>
+        </div>
+        <div class="right-side"> 
+          <div class="header-widget"> 
+			<a href="tel:07089061949" class="popup-with-zoom-anim log-in-button sign-in"><i class="icon-feather-phone-call"></i> <span>Call Us Now</span></a> 
+			<a href="/search.html" class="button border"><i class=" icon-material-outline-search"></i> <span>Explore Property</span></a> 
+		  </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="clearfix"></div>
+  
+  <!-- Banner -->
+  <!-- <div class="parallax" data-background="images/home-parallax-1.jpg" data-color="#36383e" data-color-opacity="0.72" data-img-width="2500" data-img-height="1600">
+    <div class="utf-parallax-content-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"> 
+            <div class="utf-main-search-container-area">
+              <div class="utf-banner-headline-text-part">
+				<h2>Best Place To Find <span class="typed-words"></span></h2>
+				<span>From as low as $10 per day with limited time offer discounts.</span> 
+			  </div>
+              <form class="utf-main-search-form-item">
+                <div class="utf-search-type-block-area">
+					<div class="search-type">
+					  <label class="active">
+						<input class="first-tab" name="tab" checked="checked" type="radio">Buy</label>
+					  <label>
+						<input name="tab" type="radio">Rent</label>
+					  <label>
+						<input name="tab" type="radio">Sale</label>
+						<div class="utf-search-type-arrow"></div>
+					</div>
+				</div>
+                <div class="utf-main-search-box-area"> 
+                  <div class="row with-forms"> 
+				    <div class="col-md-4 col-sm-12">
+						<input type="text" class="ico-01" placeholder="Enter Keywords..." value=""/>
+					</div>
+                    <div class="col-md-2 col-sm-6">
+                      <select data-placeholder="Select Area" title="Select Area" class="utf-chosen-select-single-item">
+                        <option>Select Area</option>
+						<option>Afghanistan</option>
+                        <option>Albania</option>
+                        <option>Algeria</option>
+                        <option>Brazil</option>
+                        <option>Burundi</option>
+                        <option>Bulgaria</option>
+						<option>California</option>
+						<option>Germany</option>
+                        <option>Grenada</option>
+                        <option>Guatemala</option>
+                        <option>Iceland</option>                        
+                      </select>
+                    </div>
+					<div class="col-md-2 col-sm-6">
+                      <select data-placeholder="Select City" title="Select City" class="utf-chosen-select-single-item">
+                        <option>Select City</option>
+						<option>Afghanistan</option>
+                        <option>Albania</option>
+                        <option>Algeria</option>
+                        <option>Brazil</option>
+                        <option>Burundi</option>
+                        <option>Bulgaria</option>
+						<option>California</option>
+						<option>Germany</option>
+                        <option>Grenada</option>
+                        <option>Guatemala</option>
+                        <option>Iceland</option>                        
+                      </select>
+                    </div>
+					<div class="col-md-2 col-sm-6">
+						<button class="button utf-search-btn-item"><i class="fa fa-search"></i> Search</button>	
+					</div>
+					<div class="col-md-2 col-sm-6">
+						<a href="#" class="utf-utf-more-search-options-area-button" data-open-title="More Search" data-close-title="Less Search"></a>
+					</div>
+                  </div>
+                                    
+                  <div class="utf-more-search-options-area">
+                    <div class="utf-more-search-options-area-container"> 
+                      <div class="row with-forms">
+					    <div class="col-md-4">
+						  <select data-placeholder="Property Status" class="utf-chosen-select-single-item">
+							<option>Property Status</option>
+							<option>Any</option>
+							<option>For Rent</option>
+							<option>For Sale</option>							
+						  </select>
+						</div>
+						<div class="col-md-4">
+						  <select data-placeholder="Property Type" class="utf-chosen-select-single-item">
+							<option>Property Type</option>
+							<option>Residential</option>
+							<option>Commercial</option>
+							<option>Land</option>							
+						  </select>
+						</div>
+						<div class="col-md-4">
+						  <select data-placeholder="Max Rooms" class="utf-chosen-select-single-item">
+							<option>Max Rooms</option>
+							<option>1 Rooms</option>
+							<option>2 Rooms</option>
+							<option>3 Rooms</option>
+							<option>4 Rooms</option>
+							<option>5 Rooms</option>	
+						  </select>
+						</div>
+						<div class="col-md-4">
+						  <select data-placeholder="Bed" class="utf-chosen-select-single-item">
+							<option>Bed</option>
+							<option>1 Bed</option>
+							<option>2 Bed</option>
+							<option>3 Bed</option>
+							<option>4 Bed</option>
+							<option>5 Bed</option>	
+						  </select>
+						</div>
+						<div class="col-md-4">
+						  <select data-placeholder="Bath" class="utf-chosen-select-single-item">
+							<option>Bath</option>
+							<option>1 Bath</option>
+							<option>2 Bath</option>
+							<option>3 Bath</option>
+							<option>4 Bath</option>
+							<option>5 Bath</option>	
+						  </select>
+						</div>
+						<div class="col-md-4">
+						  <select data-placeholder="Agents" class="utf-chosen-select-single-item">
+							<option>Agents</option>
+							<option>Bob Haris</option>
+							<option>Ross Buttler</option>
+							<option>Andrew Saimons</option>
+							<option>Steve Austin</option>
+						  </select>
+						</div>
+						<div class="col-md-3"> 
+						  <div class="select-input">
+							<input type="text" placeholder="Min Price" data-unit="USD">
+						  </div>
+						</div>
+						<div class="col-md-3"> 
+						  <div class="select-input">
+							<input type="text" placeholder="Max Price" data-unit="USD">
+						  </div>
+						</div>
+						<div class="col-md-3"> 
+						  <div class="select-input">
+							<input type="text" placeholder="Min Area" data-unit="Sq Ft">
+						  </div>
+						</div>
+                        <div class="col-md-3"> 
+                          <div class="select-input">
+                            <input type="text" placeholder="Max Area" data-unit="Sq Ft">
+                          </div>
+                        </div>						
+                      </div>
+                      
+                      <div class="checkboxes in-row">
+						<div class="title-attribute">Amenities</div>
+					    <input id="check-1" type="checkbox" name="check">
+                        <label for="check-1">Emergency Exit</label>
+                        <input id="check-2" type="checkbox" name="check">
+                        <label for="check-2">Dining Room</label>
+                        <input id="check-3" type="checkbox" name="check">
+                        <label for="check-3">Air Condition</label>
+                        <input id="check-4" type="checkbox" name="check" >
+                        <label for="check-4">Garden</label>
+                        <input id="check-5" type="checkbox" name="check">
+                        <label for="check-5">Onsite Parking</label>
+                        <input id="check-6" type="checkbox" name="check">
+                        <label for="check-6">Central Heating</label>
+                        <input id="check-7" type="checkbox" name="check">
+                        <label for="check-7">Dishwasher</label>
+                        <input id="check-8" type="checkbox" name="check">
+                        <label for="check-8">Family Room</label>
+						<input id="check-9" type="checkbox" name="check">
+                        <label for="check-9">Hardwood Flows</label>
+						<input id="check-10" type="checkbox" name="check">
+                        <label for="check-10">Parking</label>						
+						<input id="check-11" type="checkbox" name="check">
+                        <label for="check-11">Cleaning Service</label>
+                        <input id="check-12" type="checkbox" name="check">
+                        <label for="check-12">Doorman</label>
+                        <input id="check-13" type="checkbox" name="check" >
+                        <label for="check-13">Fire Alarm</label>
+                        <input id="check-14" type="checkbox" name="check">
+                        <label for="check-14">Heating System</label>
+                        <input id="check-15" type="checkbox" name="check">
+                        <label for="check-15">Pets Allowed</label>
+                        <input id="check-16" type="checkbox" name="check">
+                        <label for="check-16">Waterfront</label>
+                        <input id="check-17" type="checkbox" name="check">
+                        <label for="check-17">Cooling System</label>
+						<input id="check-18" type="checkbox" name="check">
+                        <label for="check-18">Elevator</label>
+						<input id="check-19" type="checkbox" name="check">
+                        <label for="check-19">Fireplace</label>
+						<input id="check-20" type="checkbox" name="check">
+                        <label for="check-20">Home Theater</label>                        
+                      </div>                      
+                    </div>
+                  </div>                  
+                </div>                
+              </form>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="parallax" data-background="images/home-parallax-3.jpg" data-color="#145D9E" data-color-opacity="0.8" data-img-width="2500" data-img-height="1600">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="search-container"> 
+            <h2>Find Your Dream Home</h2>
+			<div class="announce">We provide affordable luxurious homes that exquisitely suit your taste and match your budget.</div>
+            <div class="row with-forms"> 
+			  <!-- Select City -->
+			  <div class="col-md-3">
+				  <select data-placeholder="Select Location" title="Select City" class="utf-chosen-select-single-item">
+					<option>City</option>
+					<option>Afghanistan</option>
+					<option>Albania</option>
+					<option>Algeria</option>
+					<option>Brazil</option>
+					<option>Burundi</option>
+					<option>Bulgaria</option>
+					<option>California</option>
+					<option>Germany</option>
+					<option>Grenada</option>
+					<option>Guatemala</option>
+					<option>Iceland</option>                        
+				  </select>
+			  </div>
+					
+			 <!-- Status -->
+			 <div class="col-md-2">
+                <select data-placeholder=" Status" class="utf-chosen-select-single-item">
+				  <option></option>
+                  <option>Available Properties</option>
+                  <option>Ongoing Properties </option>
+                </select>
+              </div>
+
+              <!-- Property Type -->
+              <div class="col-md-3">
+                <select data-placeholder="Property Category" class="utf-chosen-select-single-item">
+                  <option></option>
+				  <option>Fully-Detached</option>
+				  <option>Semi-Detached</option>
+                  <option>Terraces</option>
+                  <option>Apartment</option>
+                  <option>Mortgage</option>
+                </select>
+              </div>
+              
+             
+              
+              <!-- Main Search Input -->
+              <div class="col-md-4">
+                <div class="utf-main-search-input-item">
+					<select data-placeholder="Bedroom" class="utf-chosen-select-single-item">
+						<option></option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					  </select>
+                  <button class="button"><i class="fa fa-search"></i> Search</button>
+                </div>
+              </div>
+            </div>
+			<div class="row">
+			  <h4 class="utf-cat-home-item-list">What are you looking for?</h4>
+				<ul class="utf-home-iconbox">
+					<li class="list-inline-item"><div class="icon"><span class="icon-line-awesome-building"></span><p><a href="/categories.html" style="color:white">Fully-Detached</a></p></div></li>
+					<li class="list-inline-item"><div class="icon"><span class="icon-feather-home"></span><p><a href="/categories.html" style="color:white">Semi-Detached</a></p></div></li>
+					<li class="list-inline-item"><div class="icon"><span class="icon-material-outline-location-city"></span><p><a href="/categories.html" style="color:white">Terraces</a></p></div></li>
+					<li class="list-inline-item"><div class="icon"><span class="icon-feather-home"></span><p><a href="/categories.html" style="color:white">Mortgage</a></p></div></li>
+					<li class="list-inline-item"><div class="icon"><span class="icon-material-outline-business"></span><p><a href="/categories.html" style="color:white">Apartment</a></p></div></li>
+				</ul>
+			</div>
+            <!-- Row With Forms / End --> 
+          </div>		  
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Content -->
+
+  <section class="fullwidth" data-background-color="#fbfbfb"> 
+    <div class="container">
+      <div class="row">
+		<div class="col-md-12">	
+			<div class="utf-section-headline-item centered margin-bottom-30 margin-top-0">
+			  <h3 class="headline"><span>Why Choose Us?</span> Luxury Embedded in Affordability </h3>
+			  <div class="utf-headline-display-inner-item">What are you looking for?</div>
+			  <p class="utf-slogan-text">We maintain high levels of customer/client service, and ensure compliance with all state-based real estate laws. Our approach to real estate operations includes buying, renovating, and managing homes.</p>
+			</div>  
+		</div>
+        <div class="col-md-3 col-sm-6"> 
+          <div class="utf-icon-box-item-area">
+            <div class="icon-container"><i class="icon-line-awesome-building"></i></div>
+            <h3>Integrity</h3>
+            <p>We operate consistently in accordance with a strong set of moral values and ethical guidelines.<br><br>
+			</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6"> 
+          <div class="utf-icon-box-item-area">
+            <div class="icon-container"><i class="icon-line-awesome-institution"></i></div>
+            <h3>Experience</h3>
+            <p>We provide top notch services and experiences throughout the entire customer journey while providing you with value for your money.<br></p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6"> 
+          <div class="utf-icon-box-item-area">
+            <div class="icon-container"><i class="icon-material-outline-location-city"></i></div>
+            <h3>Excellence</h3>
+            <p>As certified Professionals, we are embedded with the responsibility of ensuring optimum satisfaction to every client.<br></p>
+          </div>
+        </div>
+		<div class="col-md-3 col-sm-6"> 
+          <div class="utf-icon-box-item-area">
+            <div class="icon-container"><i class="icon-material-outline-business"></i></div>
+            <h3>Team Spirit</h3>
+            <p>With our line of professional business development executives who are always readily available ensure that no need is left unmet at all times.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fullwidth" data-background-color="#ffffff">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-md-12">	
+			<div class="utf-section-headline-item centered margin-bottom-30 margin-top-0">
+			  <h3 class="headline"><span>Most Featured Properties</span> Featured Properties</h3>
+			  <div class="utf-headline-display-inner-item">Most Featured Properties</div>
+			  <p class="utf-slogan-text">As we have always promised, luxury is embedded in our properties, yet they are affrdable because we believe everyone deserves luxury. Please check out our properties, we are only a click away .</p>
+			</div>  
+		  </div>
+		  <div class="col-md-12">
+			<div class="carousel"> 
+			  <div class="utf-carousel-item-area">
+				<div class="utf-listing-item"> 
+				  <a href="single-property-page-1.html" class="utf-smt-listing-img-container">
+				  <div class="utf-listing-badges-item"> 
+					<span class="featured">Available</span> 
+					<span class="for-sale">Semi-dettached </span> 
+				  </div>				  
+				  <!-- <div class="utf-listing-img-content-item"> 					
+					<img class="utf-user-picture" src="images/user_1.jpg" alt="user_1" />
+					<span class="like-icon with-tip" data-tip-content="Bookmark"></span> 
+					<span class="compare-button with-tip" data-tip-content="Add to Compare"></span> 
+					<span class="video-button with-tip" data-tip-content="Video"></span>
+				  </div> -->
+				  <div class="utf-listing-carousel-item">
+					<div><img src="images/list6.jpg" alt=""></div>
+					<div><img src="images/listing-01.jpg" alt=""></div>
+					<div><img src="images/listing-01.jpg" alt=""></div>
+				  </div>
+				  </a>
+				  <div class="utf-listing-content">				
+					<div class="utf-listing-title">
+					  <span class="utf-listing-price">$18,000/mo</span> 						  	
+					  <h4><a href="single-property-page-1.html">Renovated Luxury Apartment</a></h4>
+					  <span class="utf-listing-address"><i class="icon-material-outline-location-on"></i> 2021 San Pedro, Los Angeles 90015</span> 											  
+					</div>				
+					<ul class="utf-listing-features">
+					  <li><i class="fa fa-bed"></i> Beds<span>3</span></li>
+					  <li><i class="icon-feather-codepen"></i> Baths<span>2</span></li>
+					  <li><i class="fa fa-car"></i> Garage<span>Yes</span></li>					  					 
+					  <li><i class="icon-line-awesome-arrows"></i> Sq Ft<span>1530</span></li>
+					</ul>
+					<!-- <div class="utf-listing-user-info"><a href="agents-profile.html"><i class="icon-line-awesome-user"></i> John Williams</a> <span>1 Days Ago</span></div>	 -->
+				  </div>
+				</div>
+			  </div>
+			  <div class="utf-carousel-item-area">
+				<div class="utf-listing-item"> 
+				  <a href="single-property-page-1.html" class="utf-smt-listing-img-container">
+				  <div class="utf-listing-badges-item"> 
+					<span class="featured">Available</span> 
+					<span class="for-sale">Semi-dettached </span> 
+				  </div>				  
+				  <!-- <div class="utf-listing-img-content-item"> 					
+					<img class="utf-user-picture" src="images/user_1.jpg" alt="user_1" />
+					<span class="like-icon with-tip" data-tip-content="Bookmark"></span> 
+					<span class="compare-button with-tip" data-tip-content="Add to Compare"></span> 
+					<span class="video-button with-tip" data-tip-content="Video"></span>
+				  </div> -->
+				  <div class="utf-listing-carousel-item">
+					<div><img src="images/list5.jpg" alt=""></div>
+					<div><img src="images/listing-01.jpg" alt=""></div>
+					<div><img src="images/listing-01.jpg" alt=""></div>
+				  </div>
+				  </a>
+				  <div class="utf-listing-content">				
+					<div class="utf-listing-title">
+					  <span class="utf-listing-price">$18,000/mo</span> 						  	
+					  <h4><a href="single-property-page-1.html">Renovated Luxury Apartment</a></h4>
+					  <span class="utf-listing-address"><i class="icon-material-outline-location-on"></i> 2021 San Pedro, Los Angeles 90015</span> 											  
+					</div>				
+					<ul class="utf-listing-features">
+					  <li><i class="fa fa-bed"></i> Beds<span>3</span></li>
+					  <li><i class="icon-feather-codepen"></i> Baths<span>2</span></li>
+					  <li><i class="fa fa-car"></i> Garage<span>Yes</span></li>					  					 
+					  <li><i class="icon-line-awesome-arrows"></i> Sq Ft<span>1530</span></li>
+					</ul>
+					<!-- <div class="utf-listing-user-info"><a href="agents-profile.html"><i class="icon-line-awesome-user"></i> John Williams</a> <span>1 Days Ago</span></div>	 -->
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="utf-carousel-item-area">
+				<div class="utf-listing-item"> 
+				  <a href="single-property-page-1.html" class="utf-smt-listing-img-container">
+				  <div class="utf-listing-badges-item"> 
+					<span class="featured">Available</span> 
+					<span class="for-sale">Semi-dettached </span> 
+				  </div>				  
+				  <!-- <div class="utf-listing-img-content-item"> 					
+					<img class="utf-user-picture" src="images/user_1.jpg" alt="user_1" />
+					<span class="like-icon with-tip" data-tip-content="Bookmark"></span> 
+					<span class="compare-button with-tip" data-tip-content="Add to Compare"></span> 
+					<span class="video-button with-tip" data-tip-content="Video"></span>
+				  </div> -->
+				  <div class="utf-listing-carousel-item">
+					<div><img src="images/list3.jpg" alt=""></div>
+					<div><img src="images/listing-01.jpg" alt=""></div>
+					<div><img src="images/listing-01.jpg" alt=""></div>
+				  </div>
+				  </a>
+				  <div class="utf-listing-content">				
+					<div class="utf-listing-title">
+					  <span class="utf-listing-price">$18,000/mo</span> 						  	
+					  <h4><a href="single-property-page-1.html">Renovated Luxury Apartment</a></h4>
+					  <span class="utf-listing-address"><i class="icon-material-outline-location-on"></i> 2021 San Pedro, Los Angeles 90015</span> 											  
+					</div>				
+					<ul class="utf-listing-features">
+					  <li><i class="fa fa-bed"></i> Beds<span>3</span></li>
+					  <li><i class="icon-feather-codepen"></i> Baths<span>2</span></li>
+					  <li><i class="fa fa-car"></i> Garage<span>Yes</span></li>					  					 
+					  <li><i class="icon-line-awesome-arrows"></i> Sq Ft<span>1530</span></li>
+					</ul>
+					<!-- <div class="utf-listing-user-info"><a href="agents-profile.html"><i class="icon-line-awesome-user"></i> John Williams</a> <span>1 Days Ago</span></div>	 -->
+				  </div>
+				</div>
+			  </div>
+
+			  <div class="utf-carousel-item-area">
+				<div class="utf-listing-item"> 
+				  <a href="single-property-page-1.html" class="utf-smt-listing-img-container">
+				  <div class="utf-listing-badges-item"> 
+					<span class="featured">Available</span> 
+					<span class="for-sale">Semi-dettached </span> 
+				  </div>				  
+				  <!-- <div class="utf-listing-img-content-item"> 					
+					<img class="utf-user-picture" src="images/user_1.jpg" alt="user_1" />
+					<span class="like-icon with-tip" data-tip-content="Bookmark"></span> 
+					<span class="compare-button with-tip" data-tip-content="Add to Compare"></span> 
+					<span class="video-button with-tip" data-tip-content="Video"></span>
+				  </div> -->
+				  <div class="utf-listing-carousel-item">
+					<div><img src="images/list3.jpg" alt=""></div>
+					<div><img src="images/listing-01.jpg" alt=""></div>
+					<div><img src="images/listing-01.jpg" alt=""></div>
+				  </div>
+				  </a>
+				  <div class="utf-listing-content">				
+					<div class="utf-listing-title">
+					  <span class="utf-listing-price">$18,000/mo</span> 						  	
+					  <h4><a href="single-property-page-1.html">Renovated Luxury Apartment</a></h4>
+					  <span class="utf-listing-address"><i class="icon-material-outline-location-on"></i> 2021 San Pedro, Los Angeles 90015</span> 											  
+					</div>				
+					<ul class="utf-listing-features">
+					  <li><i class="fa fa-bed"></i> Beds<span>3</span></li>
+					  <li><i class="icon-feather-codepen"></i> Baths<span>2</span></li>
+					  <li><i class="fa fa-car"></i> Garage<span>Yes</span></li>					  					 
+					  <li><i class="icon-line-awesome-arrows"></i> Sq Ft<span>1530</span></li>
+					</ul>
+					<!-- <div class="utf-listing-user-info"><a href="agents-profile.html"><i class="icon-line-awesome-user"></i> John Williams</a> <span>1 Days Ago</span></div>	 -->
+				  </div>
+				</div>
+			  </div>
+			  
+			  <!-- <div class="utf-carousel-item-area">
+				<div class="utf-listing-item"> <a href="single-property-page-2.html" class="utf-smt-listing-img-container">
+				  <div class="utf-listing-badges-item"> 
+					<span class="for-rent">For Rent</span> 
+				  </div>
+				  <div class="utf-listing-img-content-item"> 
+					<img class="utf-user-picture" src="images/user_1.jpg" alt="user_1" />
+					<span class="like-icon with-tip" data-tip-content="Bookmark"></span> 
+					<span class="compare-button with-tip" data-tip-content="Add to Compare"></span> 
+					<span class="video-button with-tip" data-tip-content="Video"></span>
+				  </div>
+				  <img src="images/listing-02.jpg" alt=""> </a>
+				  <div class="utf-listing-content">
+					<div class="utf-listing-title">
+					  <span class="utf-listing-price">$15,000/mo</span>	
+					  <h4><a href="single-property-page-2.html">Renovated Luxury Apartment</a></h4>
+					  <span class="utf-listing-address"><i class="icon-material-outline-location-on"></i> 2021 San Pedro, Los Angeles 90015</span> 
+					</div>				
+					<ul class="utf-listing-features">
+					  <li><i class="fa fa-bed"></i> Beds<span>3</span></li>
+					  <li><i class="icon-feather-codepen"></i> Baths<span>2</span></li>
+					  <li><i class="fa fa-car"></i> Garages<span>2</span></li>					  					 
+					  <li><i class="icon-line-awesome-arrows"></i> Sq Ft<span>1530</span></li>					  					 
+					</ul>	
+					<div class="utf-listing-user-info"><a href="agents-profile.html"><i class="icon-line-awesome-user"></i> John Williams</a> <span>1 Days Ago</span></div>	
+				  </div>
+				</div>
+			  </div> -->
+			  
+			  <!-- <div class="utf-carousel-item-area">
+				<div class="utf-listing-item"> <a href="single-property-page-1.html" class="utf-smt-listing-img-container">
+				  <div class="utf-listing-badges-item"> 
+					<span class="featured">Featured</span> 
+					<span class="for-rent">For Rent</span> 
+				  </div>
+				  <div class="utf-listing-img-content-item"> 
+					<img class="utf-user-picture" src="images/user_1.jpg" alt="user_1" />
+					<span class="like-icon with-tip" data-tip-content="Bookmark"></span> 
+					<span class="compare-button with-tip" data-tip-content="Add to Compare"></span> 
+					<span class="video-button with-tip" data-tip-content="Video"></span>
+				  </div>
+				  <img src="images/listing-03.jpg" alt=""> </a>
+				  <div class="utf-listing-content">
+					<div class="utf-listing-title">
+					  <span class="utf-listing-price">$22,000/mo</span>
+					  <h4><a href="single-property-page-1.html">Renovated Luxury Apartment</a></h4>
+					  <span class="utf-listing-address"><i class="icon-material-outline-location-on"></i> 2021 San Pedro, Los Angeles 90015</span> 
+					</div>				
+					<ul class="utf-listing-features">
+					  <li><i class="fa fa-bed"></i> Beds<span>3</span></li>
+					  <li><i class="icon-feather-codepen"></i> Baths<span>2</span></li>
+					  <li><i class="fa fa-car"></i> Garages<span>2</span></li>					  					 
+					  <li><i class="icon-line-awesome-arrows"></i> Sq Ft<span>1530</span></li>				  					 
+					</ul>				
+					<div class="utf-listing-user-info"><a href="agents-profile.html"><i class="icon-line-awesome-user"></i> John Williams</a> <span>1 Days Ago</span></div>	
+				  </div>              
+				</div>
+			  </div>
+			  
+			  <div class="utf-carousel-item-area">
+				<div class="utf-listing-item"> <a href="single-property-page-1.html" class="utf-smt-listing-img-container">
+				  <div class="utf-listing-badges-item"> 
+					<span class="for-sale">For Sale</span> 
+				  </div>
+				  <div class="utf-listing-img-content-item"> 
+				    <img class="utf-user-picture" src="images/user_1.jpg" alt="user_1" />
+					<span class="like-icon with-tip" data-tip-content="Bookmark"></span> 
+					<span class="compare-button with-tip" data-tip-content="Add to Compare"></span> 
+					<span class="video-button with-tip" data-tip-content="Video"></span>
+				  </div>
+				  <div class="utf-listing-carousel-item">
+					<div><img src="images/listing-04.jpg" alt=""></div>
+					<div><img src="images/listing-04.jpg" alt=""></div>
+				  </div>
+				  </a>
+				  <div class="utf-listing-content">
+					<div class="utf-listing-title">
+					  <span class="utf-listing-price">$25,000/mo</span>
+					  <h4><a href="single-property-page-1.html">Renovated Luxury Apartment</a></h4>
+					  <span class="utf-listing-address"><i class="icon-material-outline-location-on"></i> 2021 San Pedro, Los Angeles 90015</span> 
+					</div>
+					<ul class="utf-listing-features">
+					  <li><i class="fa fa-bed"></i> Beds<span>3</span></li>
+					  <li><i class="icon-feather-codepen"></i> Baths<span>2</span></li>
+					  <li><i class="fa fa-car"></i> Garages<span>2</span></li>					  					 
+					  <li><i class="icon-line-awesome-arrows"></i> Sq Ft<span>1530</span></li>					  					 
+					</ul> 
+					<div class="utf-listing-user-info"><a href="agents-profile.html"><i class="icon-line-awesome-user"></i> John Williams</a> <span>1 Days Ago</span></div>	
+				  </div>              
+				</div>
+			  </div>
+			  
+			  <div class="utf-carousel-item-area">
+				<div class="utf-listing-item"> <a href="single-property-page-1.html" class="utf-smt-listing-img-container">
+				  <div class="utf-listing-badges-item"> 
+					<span class="for-sale">For Sale</span> 
+				  </div>
+				  <div class="utf-listing-img-content-item"> 
+					<img class="utf-user-picture" src="images/user_1.jpg" alt="user_1" />
+					<span class="like-icon with-tip" data-tip-content="Bookmark"></span> 
+					<span class="compare-button with-tip" data-tip-content="Add to Compare"></span> 
+					<span class="video-button with-tip" data-tip-content="Video"></span>
+				  </div>
+				  <img src="images/listing-05.jpg" alt=""> </a>
+				  <div class="utf-listing-content">
+					<div class="utf-listing-title">
+					  <span class="utf-listing-price">$14,000/mo</span>
+					  <h4><a href="single-property-page-1.html">Renovated Luxury Apartment</a></h4>
+					  <span class="utf-listing-address"><i class="icon-material-outline-location-on"></i> 2021 San Pedro, Los Angeles 90015</span> 
+					</div>				
+					<ul class="utf-listing-features">
+					  <li><i class="fa fa-bed"></i> Beds<span>3</span></li>
+					  <li><i class="icon-feather-codepen"></i> Baths<span>2</span></li>
+					  <li><i class="fa fa-car"></i> Garages<span>2</span></li>					  					 
+					  <li><i class="icon-line-awesome-arrows"></i> Sq Ft<span>1530</span></li>				  					 
+					</ul> 	
+					<div class="utf-listing-user-info"><a href="agents-profile.html"><i class="icon-line-awesome-user"></i> John Williams</a> <span>1 Days Ago</span></div>	
+				  </div>              
+				</div>
+			  </div>           -->
+			</div>
+		  </div>      
+		</div>
+	  </div>
+  </section>
+  
+
+  
+  
+  <!-- Fullwidth Section -->
+
+  
+
+  
+  <section class="fullwidth" data-background-color="#ffffff">
+	<div class="container">
+		<div class="row">
+		  <div class="col-md-12">	
+			<div class="utf-section-headline-item centered margin-bottom-30 margin-top-0">
+			  <h3 class="headline"><span>Most Popular Places</span> Most Popular Properties Places</h3>
+			  <div class="utf-headline-display-inner-item">Most Popular Places</div>
+			  <p class="utf-slogan-text">Lorem Ipsum is simply dummy text printing and type setting industry Lorem Ipsum been industry standard dummy text ever since when unknown printer took a galley.</p>
+			</div>  
+		  </div>
+		  <div class="col-md-4 col-sm-6"> 
+			<a href="/categories.html" class="img-box"> 
+				<img src="images/popular-location-01.jpg" alt="" />
+				<div class="utf-cat-img-box-content visible">
+				  <h4>Ajah</h4>
+				  <span>14 Properties</span> 
+				</div>
+			</a> 
+		  </div>
+		  <div class="col-md-3 col-sm-6"> 
+			<a href="listings-list-with-sidebar.html" class="img-box">
+				<img src="images/popular-location-02.jpg" alt="" />
+				<div class="utf-cat-img-box-content visible">
+				  <h4>Lekki</h4>
+				  <span>24 Properties</span>
+				</div>
+			</a> 
+		  </div>
+		  <div class="col-md-5 col-sm-6"> 
+			<a href="listings-list-with-sidebar.html" class="img-box">
+				<img src="images/popular-location-03.jpg" alt="" />
+				<div class="utf-cat-img-box-content visible">
+				  <h4>Ikeja</h4>
+				  <span>12 Properties</span> 
+				</div>
+			</a> 
+		  </div>
+		  <!-- <div class="col-md-5 col-sm-6"> 
+			<a href="listings-list-with-sidebar.html" class="img-box">
+				<img src="images/popular-location-04.jpg" alt="" />
+				<div class="utf-cat-img-box-content visible">
+				  <h4>Miami</h4>
+				  <span>9 Properties</span> 
+				</div>
+			</a> 
+		  </div>
+		  <div class="col-md-4 col-sm-6"> 
+			<a href="listings-list-with-sidebar.html" class="img-box"> 
+				<img src="images/popular-location-05.jpg" alt="" />
+				<div class="utf-cat-img-box-content visible">
+				  <h4>Belize</h4>
+				  <span>14 Properties</span> 
+				</div>
+			</a> 
+		  </div>
+		  <div class="col-md-3 col-sm-6"> 
+			<a href="listings-list-with-sidebar.html" class="img-box">
+				<img src="images/popular-location-06.jpg" alt="" />
+				<div class="utf-cat-img-box-content visible">
+				  <h4>Cambodia</h4>
+				  <span>24 Properties</span> 
+				</div>
+			</a> 
+		  </div>		  	 -->
+		</div>
+		<div class="utf-centered-button margin-top-10">
+			<a href="all-categorie.html" class="button">View All Categories</a> 
+		</div>
+	 </div>
+  </section>
+
+
+  <section class="fullwidth margin-top-65 margin-bottom-0 padding-bottom-80 padding-top-75" data-background-color="#f7f7f7">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12">	
+			<div class="utf-section-headline-item centered margin-bottom-0 margin-top-0">
+			  <h3 class="headline"><span>Clients Say About Us</span> What Our Clients Say</h3>
+			  <div class="utf-headline-display-inner-item">Clients Say About Us</div>
+			  <p class="utf-slogan-text">For all the years we have being in business, our Cliets have gotten remoarkable experiences and we are happy to share with you, their testimonies. </p>
+			</div>  
+		  </div>
+		  <div class="col-md-12">
+			<div class="testimonial-carousel"> 
+			  <div class="utf-carousel-item-area">
+				<div class="utf-listing-item utf-testimonial-item-box-area"> 
+				   <div class="utf-testimonial-box">
+						<div class="testimonial">  I recently purchased a
+							house with Centania Homes and while this can be a very stressful process, I felt 110% confident by partnering with them and their team. They were vey candid, provided great feedback, helped explain clearly all details and managed the actual sale negotiation brilliantly. </div>
+						<div class="testimonial-author"> 
+							<!-- <img src="images/happy-client-01.jpg" alt=""> -->
+						  <h4>Mrs. Shola Adebowale <span></span></h4>
+						</div>
+					</div>
+				</div>
+			  </div>
+			  
+			  <div class="utf-carousel-item-area">
+				<div class="utf-listing-item utf-testimonial-item-box-area"> 
+				   <div class="utf-testimonial-box">
+						<div class="testimonial">My wife and I have always
+							had a dream of finally buying
+							 our dream home in a safe and
+							  secure location. Centania Homes
+							   with their skilled team 
+							   helped make that dream a 
+							   reality. The sale went smoothly,
+								and we just closed on an ideal
+								 new place we're excited to call home. </div>
+						<div class="testimonial-author"> 
+							<!-- <img src="images/happy-client-01.jpg" alt=""> -->
+						  <h4>Uche Nnamdi <span></span></h4>
+						</div>
+					</div>
+				</div>
+			  </div>
+
+			  <div class="utf-carousel-item-area">
+				<div class="utf-listing-item utf-testimonial-item-box-area"> 
+				   <div class="utf-testimonial-box">
+						<div class="testimonial">  Centania Homes is an 
+							outstanding company to work with.
+							 They are skilled listeners, with very
+							  in-depth knowledge of the local markets.
+							   My wife and I wanted two properties, A
+								commercial land and a fully detached 
+								home both in serene locations free from
+								 omonile wahala and they provided all we
+								  needed within week. Met and exceeded
+							 our expectation, totally recommend.</div>
+						<div class="testimonial-author"> 
+							<!-- <img src="images/happy-client-01.jpg" alt=""> -->
+						  <h4>Mr Dennis <span></span></h4>
+						</div>
+					</div>
+				</div>
+			  </div>
+
+			  <div class="utf-carousel-item-area">
+				<div class="utf-listing-item utf-testimonial-item-box-area"> 
+				   <div class="utf-testimonial-box">
+						<div class="testimonial">The team was a joy to work with!
+							Their breath of local knowledge of 
+							every location, my needs and its 
+							environs along with a thorough real
+							 estate expertise was invaluable to
+							  us that are real estate novices. 
+							  They took time to introduce us to
+							   the market and then showed us lots 
+							   of houses so we had great choices
+								to work with, all of this was done
+								 while
+							perfectly working within our time frame.</div>
+						<div class="testimonial-author"> 
+							<!-- <img src="images/happy-client-01.jpg" alt=""> -->
+						  <h4>Mrs Abigail Effiong <span></span></h4>
+						</div>
+					</div>
+				</div>
+			  </div>
+		
+			</div>
+		  </div>
+        <!-- Carousel / End -->       
+      </div>
+    </div>
+  </section>
+  
+
+  
+<div class="floating-container">
+  <div class="floating-button">+</div>
+  <div class="element-container">
+
+<a href="tel:07089061949"> 
+	<span class="float-element tooltip-left">
+      <i class="material-icons">phone
+      </i></a>
+    </span>
+    <span class="float-element">
+      <a href="https://web.facebook.com/CentaniaHomes" target="_blank" style="color:white" ><b class="material-icons">facebook
+	  </b></a>
+    </span>
+
+	<span class="float-element">
+		<a href="https://www.instagram.com/centaniahomes/" style="color:white" target="_blank" ><i class="icon-brand-instagram">
+	  </i></a>
+	  </span>
+
+
+
+	<!-- <span class="float-element">
+		<a href="ideas" style="color:white" ><i class="material-icons">facebook
+	  </i></a>
+	  </span> -->
+  
+  </div>
+</div>
+  <!-- Fullwidth Section -->
+  <!-- <section class="fullwidth" data-background-color="linear-gradient(to bottom,rgba(0,0,0,0.03) 0%,rgba(255,255,255,0))">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">	
+			<div class="utf-section-headline-item centered margin-bottom-30 margin-top-0">
+			  <h3 class="headline"><span>Our Blog & Articles</span> Latest Blog Post</h3>
+			  <div class="utf-headline-display-inner-item">Our Blog & Articles</div>
+			  <p class="utf-slogan-text">Lorem Ipsum is simply dummy text printing and type setting industry Lorem Ipsum been industry standard dummy text ever since when unknown printer took a galley.</p>
+			</div>  
+		</div>
+        <div class="col-md-4"> 
+          <div class="blog-post"> 
+            <a href="blog_detail_right_sidebar.html" class="post-img"> <img src="images/blog-post-01.jpg" alt=""> </a> 
+            <div class="utf-post-content-area">
+			  <h3><a href="blog_detail_right_sidebar.html">What It Really Takes to Make $100k Before You Turn 30</a></h3>
+			  <ul class="utf-blog-item-post-list">
+				<li>By, John Williams</li>	
+				<li>20 Jan, 2021</li>
+			  </ul>
+			  <p>Lorem Ipsum is simply dummy text of printing industry Lorem Ipsum been industry standard dummy text since book.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"> 
+          <div class="blog-post"> 
+            <a href="blog_detail_right_sidebar.html" class="post-img"> <img src="images/blog-post-02.jpg" alt=""> </a> 
+            <div class="utf-post-content-area">
+			  <h3><a href="blog_detail_right_sidebar.html">The Best Canadian Merchant Account Providers.</a></h3>
+			  <ul class="utf-blog-item-post-list">
+				<li>By, John Williams</li>	
+				<li>20 Jan, 2021</li>
+			  </ul>
+			  <p>Lorem Ipsum is simply dummy text of printing industry Lorem Ipsum been industry standard dummy text since book.</p>
+            </div>
+          </div>          
+        </div>
+        <div class="col-md-4"> 
+          <div class="blog-post"> 
+            <a href="blog_detail_right_sidebar.html" class="post-img"> <img src="images/blog-post-03.jpg" alt=""> </a> 
+            <div class="utf-post-content-area">
+			  <h3><a href="blog_detail_right_sidebar.html">Hey Job Seeker, It’s Time To Get Up And Get Hired.</a></h3>
+			  <ul class="utf-blog-item-post-list">
+				<li>By, John Williams</li>	
+				<li>20 Jan, 2021</li>
+			  </ul>
+			  <p>Lorem Ipsum is simply dummy text of printing industry Lorem Ipsum been industry standard dummy text since book.</p>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </section> -->
+  
+  <!-- Footer -->
+  <div id="footer"> 
+    <div class="container">
+      <div class="row">
+	    <div class="col-md-5 col-sm-6 col-xs-12"> 
+          <a href="index-2.html"><img class="footer-logo" src="images/logo.png" alt=""></a>
+          <p>At Centania homes, we see a home as the most valuable investment, and the greatest necessity in the world of man.</p>  
+		  <p><b>Location:</b> 39, alfred rewane road Ikoyi, Lagos</p>  
+		  <p><b><a href="mailto:info@centaniahomes.com:">Email:</b>info@centaniahomes.com</a></p>
+		  <p><b>Opening time:</b> Always Open</p>        
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-6">
+          <h4>Quick Links</h4>
+          <ul class="utf-footer-links-item">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="#">Available Properties</a></li>
+            <li><a href="#">Ongoing Properties </a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+          <h4>Property Cities</h4>
+          <ul class="utf-footer-links-item">
+            <li><a href="#">Ajah</a></li>
+            <li><a href="#">Chicago</a></li>
+            <li><a href="#">Denvar</a></li>
+			<li><a href="#">Maitamma</a></li>
+            
+          </ul>
+        </div>
+        <!-- <div class="col-md-4 col-sm-4 col-xs-6">
+          <h4>Resources</h4>
+          <ul class="utf-footer-links-item">
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">How It Work</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Term & Condition</a></li>
+          </ul>
+        </div>
+		<div class="col-md-4 col-sm-4 col-xs-6">
+          <h4>Pages</h4>
+          <ul class="utf-footer-links-item">
+            <li><a href="#">Our Partners</a></li>
+            <li><a href="#">How It Work</a></li>
+			<li><a href="#">FAQ Page</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Term & Condition</a></li>
+          </ul>
+        </div>	 -->
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyrights">Copyright © 2022 All Rights Reserved.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- <div id="backtotop"><a href="#"></a></div>
+</div>   -->
+
+<!-- Sign In Popup -->
+<div id="utf-signin-dialog-block" class="zoom-anim-dialog mfp-hide dialog-with-tabs"> 
+  <div class="utf-signin-form-part">
+    <ul class="utf-popup-tabs-nav-item">
+      <li><a href="#login">Log In</a></li>
+      <li><a href="#register">Register</a></li>
+    </ul>
+    <div class="utf-popup-container-part-tabs"> 
+      <!-- Login -->
+      <div class="utf-popup-tab-content-item" id="login"> 
+        <div class="utf-welcome-text-item">
+          <h3>Welcome Back Sign in to Continue</h3>
+          <span>Don't Have an Account? <a href="#" class="register-tab">Sign Up!</a></span> 
+		</div>
+        <form method="post" id="login-form">
+          <div class="utf-no-border">
+            <input type="text" name="emailaddress" id="emailaddress" placeholder="Email Address" required/>
+          </div>
+          <div class="utf-no-border">
+            <input type="password" name="password" id="password" placeholder="Password" required/>
+          </div>
+		  <div class="checkbox margin-top-0">
+			<input type="checkbox" id="two-step">
+			<label for="two-step"><span class="checkbox-icon"></span> Remember Me</label>
+		  </div>
+          <a href="forgot_password.html" class="forgot-password">Forgot Password?</a>
+        </form>
+        <button class="button full-width utf-button-sliding-icon ripple-effect" type="submit" form="login-form">Log In <i class="icon-feather-chevrons-right"></i></button>
+        <div class="utf-social-login-separator-item"><span>Or Login in With</span></div>
+        <div class="utf-social-login-buttons-block">
+          <button class="facebook-login ripple-effect"><i class="icon-brand-facebook-f"></i> Facebook</button>
+		  <button class="google-login ripple-effect"><i class="icon-brand-google"></i> Google</button>
+		  <button class="twitter-login ripple-effect"><i class="icon-brand-twitter"></i> Twitter</button>
+        </div>
+      </div>
+      
+      <!-- Register -->
+      <div class="utf-popup-tab-content-item" id="register"> 
+        <div class="utf-welcome-text-item">
+          <h3>Create your Account!</h3>
+		  <span>Don't Have an Account? <a href="#" class="register-tab">Sign Up!</a></span> 
+        </div>        
+        <form method="post" id="utf-register-account-form">
+          <div class="utf-no-border margin-bottom-20">
+			<select class="utf-chosen-select-single-item utf-with-border" title="Single User">
+				<option>Single User</option>
+				<option>Agent</option>
+				<option>Multi User</option>				
+			</select>
+		  </div>
+		  <div class="utf-no-border">
+            <input type="text" name="name" id="name" placeholder="User Name" required/>
+          </div>
+		  <div class="utf-no-border">
+            <input type="text" name="emailaddress-register" id="emailaddress-register" placeholder="Email Address" required/>
+          </div>
+		  <div class="utf-no-border">
+            <input type="password" name="password-register" id="password-register" placeholder="Password" required/>
+          </div>
+          <div class="utf-no-border">
+            <input type="password" name="password-repeat-register" id="password-repeat-register" placeholder="Repeat Password" required/>
+          </div>
+		  <div class="checkbox margin-top-0">
+			<input type="checkbox" id="two-step0">
+			<label for="two-step0"><span class="checkbox-icon"></span> By Registering You Confirm That You Accept <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+		  </div>
+        </form>
+        <button class="margin-top-10 button full-width utf-button-sliding-icon ripple-effect" type="submit" form="utf-register-account-form">Register <i class="icon-feather-chevrons-right"></i></button>        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Sign In Popup / End -->
+
+<!-- Scripts --> 
+<script src="scripts/jquery-3.3.1.min.js"></script> 
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/chosen.min.js"></script> 
+<script src="scripts/magnific-popup.min.js"></script> 
+<script src="scripts/owl.carousel.min.js"></script> 
+<script src="scripts/rangeSlider.js"></script> 
+<script src="scripts/sticky-kit.min.js"></script> 
+<script src="scripts/slick.min.js"></script> 
+<script src="scripts/masonry.min.js"></script> 
+<script src="scripts/mmenu.min.js"></script> 
+<script src="scripts/tooltips.min.js"></script> 
+<script src="scripts/typed.js"></script>
+<script src="scripts/custom_jquery.js"></script> 
+
+<script>
+var typed = new Typed('.typed-words', {
+	strings: ["Dream Home."," Apartments."," Residential."," Commercial."],
+	typeSpeed: 80,
+	backSpeed: 80,
+	backDelay: 4000,
+	startDelay: 1000,
+	loop: true,
+	showCursor: true
+});
+</script>
+</body>
+
+<!-- Mirrored from utouchdesign.com/themes/realfun/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jun 2022 13:46:37 GMT -->
+</html>
